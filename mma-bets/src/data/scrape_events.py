@@ -44,8 +44,8 @@ def main():
     df = pd.DataFrame(data=records, columns=columns)
     df.columns = ['link', 'name/date', 'location']
     df2 = df.iloc[1:]
-    pkl_path = Path.cwd().parent.parent/'data'/'raw'/'events.pkl'
-    df2.to_pickle(pkl_path)
+    csv_path = Path.cwd().parent.parent/'data'/'raw'/'events.csv'
+    df2.to_csv(csv_path, index=False)
 
 
 if __name__ == '__main__':
