@@ -1,0 +1,80 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-primary-color: #fff;
+	--text-primary-color: #000;
+	--ufc-red-color: #d20909;
+	--ufc-blue-color: #17559f;
+}
+
+@font-face {
+	font-family: ufc-p;
+	src: url(https://www.ufc.com/themes/custom/ufc/fonts/DPT55__W.woff2);
+}
+@font-face {
+	font-family: ufc-p-bold;
+	src: url(https://www.ufc.com/themes/custom/ufc/fonts/DIN2014-NarrowBold.woff);
+}
+
+@font-face {
+	font-family: ufc-h;
+	src: url(https://www.ufc.com/themes/custom/ufc/fonts/KlavikaWebBoldCond.woff2);
+}
+
+@font-face {
+	font-family: ufc-h-italic;
+	src: url(https://www.ufc.com/themes/custom/ufc/fonts/ParaType%20-%20DIN%202014%20Bold%20Italic.woff);
+}
+
+/* Utility */
+.text-ufc-red {
+	color: var(--ufc-red-color);
+}
+
+.text-ufc-blue {
+	color: var(--ufc-blue-color);
+}
+
+/* Header Nav Style */
+
+#nav-img {
+	width: 25%;
+}
+
+.nav-link {
+	font-family: ufc-p;
+	font-size: 3rem;
+}
+
+/* Main Sytling */
+
+.bout {
+	font-family: ufc-h;
+	color: var(--text-primary-color);
+}
+
+.fighter-img {
+	height: 20rem;
+}
+
+.stat-text {
+	text-align: center;
+	font-family: ufc-p-bold;
+}
+
+.stat {
+	text-align: center;
+	font-family: ufc-h-italic;
+	border-left: 0.25rem solid var(--ufc-red-color);
+	border-right: 0.25rem solid var(--ufc-blue-color);
+}
+
+.badge-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

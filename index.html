@@ -1,12 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMA Bets</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<title>MMA Bets</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"
+					><img
+						src="./assets/images/1280px-UFC_Logo.svg.png"
+						alt="ufc logo"
+						id="nav-img"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-light border-bottom p-1 m-1" href="#"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light border-bottom p-1 m-1" href="#"
+								>Upcoming</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light border-bottom p-1 m-1" href="#"
+								>About</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="accordion" id="accordionPanelsStayOpenExample">
+				<!-- Item 1 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseOne"
+							aria-expanded="true"
+							aria-controls="panelsStayOpen-collapseOne"
+						>
+							<h2 class="bout">Derrick Lewis -VS- Ciryl Gane</h2>
+						</button>
+					</h2>
+					<div
+						id="panelsStayOpen-collapseOne"
+						class="accordion-collapse collapse show"
+						aria-labelledby="panelsStayOpen-headingOne"
+					>
+						<div class="accordion-body row">
+							<!-- Red Corner -->
+							<div class="col-2">
+								<img
+									src="./assets/images/LEWIS_DERRICK_L_02-08.png"
+									alt="derrick lewis"
+									class="fighter-img"
+								/>
+							</div>
+							<!-- Stats -->
+							<div class="col-8">
+								<!-- Corner -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text text-ufc-red">Red</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Corner</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text text-ufc-blue">Blue</h3>
+									</div>
+								</div>
+
+								<!-- Name -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">Derrick Lewis</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Fighter</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">Ciryl Gane</h3>
+									</div>
+								</div>
+
+								<!-- Record -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">25-7-0, 1 NC</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Record</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">9-0-0</h3>
+									</div>
+								</div>
+
+								<!-- Height -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">6'3</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Height</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">6'4</h3>
+									</div>
+								</div>
+
+								<!-- Reach -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">79 in</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Reach</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">81 in</h3>
+									</div>
+								</div>
+
+								<!-- Avg Fight Time -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">9:32</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">AVG Fight Time</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">15:15</h3>
+									</div>
+								</div>
+
+								<!-- Significant Strikes -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">50%</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Significant Strikes</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">54%</h3>
+									</div>
+								</div>
+
+								<!-- Predicted Winner -->
+								<div class="row">
+									<div class="col badge-center">
+										<div class="badge bg-success">Winner</div>
+									</div>
+									<div class="col">
+										<h3 class="stat">Predicted Winner</h3>
+									</div>
+									<div class="col badge-center">
+										<div class="badge bg-danger">Loser</div>
+									</div>
+								</div>
+							</div>
+							<!-- Blue Corner -->
+							<div class="col-2 d-flex justify-content-end">
+								<img
+									src="./assets/images/GANE_CYRIL_R_06-26.png"
+									alt="cyril gane"
+									class="fighter-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- Item 2 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseTwo"
+							aria-expanded="true"
+							aria-controls="panelsStayOpen-collapseTwo"
+						>
+							<h2 class="bout">Song Yadong -VS- Casey Kenney</h2>
+						</button>
+					</h2>
+					<div
+						id="panelsStayOpen-collapseTwo"
+						class="accordion-collapse collapse"
+						aria-labelledby="panelsStayOpen-headingTwo"
+					>
+						<div class="accordion-body row">
+							<!-- Red Corner -->
+							<div class="col-2">
+								<img
+									src="./assets/images/SONG_YADONG_L.png"
+									alt="song Yadong"
+									class="fighter-img"
+								/>
+							</div>
+							<!-- Stats -->
+							<div class="col-8">
+								<!-- Corner -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text text-ufc-red">Red</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Corner</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text text-ufc-blue">Blue</h3>
+									</div>
+								</div>
+
+								<!-- Name -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">Song Yadong</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Fighter</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">Casey Kenney</h3>
+									</div>
+								</div>
+
+								<!-- Record -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">16-5-1, 1 NC</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Record</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">16-3-1</h3>
+									</div>
+								</div>
+
+								<!-- Height -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">5'8</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Height</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">5'7</h3>
+									</div>
+								</div>
+
+								<!-- Reach -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">67 in</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Reach</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">68 in</h3>
+									</div>
+								</div>
+
+								<!-- Avg Fight Time -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">10:54</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">AVG Fight Time</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">13:40</h3>
+									</div>
+								</div>
+
+								<!-- Significant Strikes -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">42%</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Significant Strikes</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">42%</h3>
+									</div>
+								</div>
+
+								<!-- Predicted Winner -->
+								<div class="row">
+									<div class="col badge-center">
+										<div class="badge bg-danger">Loser</div>
+									</div>
+									<div class="col">
+										<h3 class="stat">Predicted Winner</h3>
+									</div>
+									<div class="col badge-center">
+										<div class="badge bg-success">Winner</div>
+									</div>
+								</div>
+							</div>
+							<!-- Blue Corner -->
+							<div class="col-2 d-flex justify-content-end">
+								<img
+									src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2020-10/67567%252Fprofile-galery%252Ffullbodyright-picture%252FKENNEY_CASEY_R_10-03.png?VersionId=null&itok=wXEdS-nl"
+									alt="Casey Kenney"
+									class="fighter-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- Item 3 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseThree"
+							aria-expanded="true"
+							aria-controls="panelsStayOpen-collapseThree"
+						>
+							<h2 class="bout">Michael Chiesa -VS- Vicente Lugue</h2>
+						</button>
+					</h2>
+					<div
+						id="panelsStayOpen-collapseThree"
+						class="accordion-collapse collapse"
+						aria-labelledby="panelsStayOpen-headingThree"
+					>
+						<div class="accordion-body row">
+							<!-- Red Corner -->
+							<div class="col-2">
+								<img
+									src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2020-12/CHIESA_MICHAEL_L-UPDATED12-20.png?VersionId=null&itok=oMI8_iSp"
+									alt="Michael Chiesa"
+									class="fighter-img"
+								/>
+							</div>
+							<!-- Stats -->
+							<div class="col-8">
+								<!-- Corner -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text text-ufc-red">Red</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Corner</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text text-ufc-blue">Blue</h3>
+									</div>
+								</div>
+
+								<!-- Name -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">Michael Chiesa</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Fighter</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">Vicente Lugue</h3>
+									</div>
+								</div>
+
+								<!-- Record -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">18-4-0</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Record</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">20-7-1</h3>
+									</div>
+								</div>
+
+								<!-- Height -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">6'1</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Height</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">5'11</h3>
+									</div>
+								</div>
+
+								<!-- Reach -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">75.5 in</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Reach</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">75.5 in</h3>
+									</div>
+								</div>
+
+								<!-- Avg Fight Time -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">9:59</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">AVG Fight Time</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">8:33</h3>
+									</div>
+								</div>
+
+								<!-- Significant Strikes -->
+								<div class="row">
+									<div class="col">
+										<h3 class="stat-text">40%</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat">Significant Strikes</h3>
+									</div>
+									<div class="col">
+										<h3 class="stat-text">54%</h3>
+									</div>
+								</div>
+
+								<!-- Predicted Winner -->
+								<div class="row">
+									<div class="col badge-center">
+										<div class="badge bg-danger">Loser</div>
+									</div>
+									<div class="col">
+										<h3 class="stat">Predicted Winner</h3>
+									</div>
+									<div class="col badge-center">
+										<div class="badge bg-success">Winner</div>
+									</div>
+								</div>
+							</div>
+							<!-- Blue Corner -->
+							<div class="col-2 d-flex justify-content-end">
+								<img
+									src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-10/LUQUE_VICENTE_R.png?VersionId=jhUA.jUoGThYQcm01JT8SHget3MHHaRu&itok=ZoP7PQtE"
+									alt="cyril gane"
+									class="fighter-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
 </html>
